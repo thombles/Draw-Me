@@ -1,5 +1,5 @@
 CC=cc
-CFLAGS=-c -Wall `MagickWand-config --cflags` -g
+CFLAGS=-c -Wall `MagickWand-config --cflags` -g --std=c99
 LDFLAGS=`MagickWand-config --ldflags`
 SOURCES=draw_me.c palette.c
 OBJECTS=$(SOURCES:.c=.o)
